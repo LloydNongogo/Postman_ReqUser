@@ -1,0 +1,22 @@
+1.1 Test analysis and Design
+To reduce reduncancy, I would use both Equivalence Partitioning and Boundary Value Analysis to ensure that every field is mostly covered.
+- Happy path:
+    - Register will all valid details
+    - Verify that the "Confirm Password" matches the "Password".
+- Negative path:
+    - Input different strings for "Confirm Password" and "Password"
+    - Enter an email where First Name or Last Name is required.
+    - Test whether the system allows duplicate usernames
+- Special case or edge case:
+    -Testing if the system allows Special characters where normal strings are required.
+
+1.2. Prioritisation and strategy:
+I would prioritise a positive and most critical negative sccenario first. 
+To validate first that a user is able to Register with basic valid credentials before moving onto testing all the field validations after, 
+which would after involve checking the spelling errors or clear error messages on the UI test.
+For this I would use either Selenium or Cypress automated regression.
+
+1.3. Client collaboration:
+I think it's important to understand the requirements which might not be specified in the task, for example password requirements(length, complexity) in order to have some acceptance criteria in place.
+Reporting: 
+I would provide Test summary reports to the client at the end of the test cycle highlighting bugs found and coverage and qulity of the feature.
